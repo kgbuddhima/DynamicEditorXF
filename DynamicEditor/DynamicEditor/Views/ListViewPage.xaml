@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:DynamicEditor;assembly=DynamicEditor"
+             x:Class="DynamicEditor.ListViewPage"
+             >
+    <Grid RowSpacing="0" ColumnSpacing="0" Padding="5,5,5,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ScrollView  x:Name="scrollView" Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+            <ListView x:Name="MyListView" HasUnevenRows="True"    
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid  Grid.Row="1"  Grid.Column="1"  ColumnSpacing="5" Padding="5,10,5,5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Message}">
+                                </Label>
+                                <Image Grid.Row="0"  Grid.Column="1" HorizontalOptions="Center"
+                                       VerticalOptions="Center" HeightRequest="35" WidthRequest="35"  Source = "{Binding Image}">
+                                </Image>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+        <Grid  Grid.Row="1"  Grid.Column="0"  ColumnSpacing="5" BackgroundColor="LightGray" Padding="5,5,5,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <local:EditorXF x:Name="txtMessage" Grid.Row="0" Grid.Column="0" FontSize="Small"
+                    VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+            </local:EditorXF>
+            <Image Grid.Row="0" Grid.RowSpan="2"  Grid.Column="1" HorizontalOptions="Center"
+			   HeightRequest="35" WidthRequest="35" Source = "Send.png">
+            </Image>
+        </Grid>
+    </Grid>
+</ContentPage>

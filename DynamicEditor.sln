@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicEditor.Android", "DynamicEditor\DynamicEditor.Android\DynamicEditor.Android.csproj", "{9C7947B2-A40B-4A4E-90EA-A6D5AFE143CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicEditor", "DynamicEditor\DynamicEditor\DynamicEditor.csproj", "{E3805628-29DC-4861-8ABF-C2A09D2DCDA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C7947B2-A40B-4A4E-90EA-A6D5AFE143CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7947B2-A40B-4A4E-90EA-A6D5AFE143CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7947B2-A40B-4A4E-90EA-A6D5AFE143CD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9C7947B2-A40B-4A4E-90EA-A6D5AFE143CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7947B2-A40B-4A4E-90EA-A6D5AFE143CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7947B2-A40B-4A4E-90EA-A6D5AFE143CD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E3805628-29DC-4861-8ABF-C2A09D2DCDA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3805628-29DC-4861-8ABF-C2A09D2DCDA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3805628-29DC-4861-8ABF-C2A09D2DCDA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3805628-29DC-4861-8ABF-C2A09D2DCDA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D801CFC4-5F93-4BC2-81AE-9A71EBF60B9C}
+	EndGlobalSection
+EndGlobal
